@@ -450,7 +450,7 @@ textarea {
   min-height: 41vh;
   width: 100%;
   background-color: rgb(19, 19, 26);
-  /* border: 12px solid salmon; */
+  /* border: 12px solid salmon; " */
 }
 .Footer-imgs {
   display: flex;

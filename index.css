@@ -1,0 +1,771 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* ====================================HEADER========================================= */
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid gold;
+  min-height: 28vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.header-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gold;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-img h1 {
+  color: orange;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.header-img img {
+  width: 70px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-list ul {
+  display: flex;
+  column-gap: 32px;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.nav-list ul a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav-list ul a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.content-area {
+  overflow: auto;
+  min-height: 100vh;
+  background-image: url(/imgs/home-img.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 28vh;
+  padding: 20px;
+}
+
+.content {
+  margin-top: 12%;
+  margin-left: 5%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.3;
+}
+
+span {
+  color: orange;
+}
+
+.content p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: orange;
+  font-size: 1.2rem;
+  width: 190px;
+  margin-top: 5%;
+  padding: 10px 12px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  width: 210px;
+  letter-spacing: 2px;
+}
+
+/* =================================ABOUT US================================== */
+.About-Us {
+  background-color: black;
+  padding: 20px;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  padding: 35px 0px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.About-Us-content {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: rgb(19, 19, 26);
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.About-Us-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.About-Us-img img {
+  width: 100%;
+  height: auto;
+}
+
+.About-Us-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 19px 20px;
+}
+
+.About-Us-text h1 {
+  margin-bottom: 3%;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.About-Us-text p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  margin-bottom: 3%;
+}
+
+.about-btn {
+  background-color: orange;
+  font-size: 1.2rem;
+  width: 150px;
+  padding: 10px 12px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  width: 170px;
+  letter-spacing: 2px;
+}
+
+/* =====================================MENU============================================ */
+.Menu {
+  background-color: black;
+  padding: 20px;
+}
+
+.Our-Menu h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 0px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  column-gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Card1:hover {
+  background: rgb(68, 51, 0);
+  transform: translateY(-5px);
+}
+
+.Card1 {
+  border: 3px solid orange;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card-img img {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.Card1 h2 {
+  margin: 5% 0%;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+
+.Card1 p {
+  font-size: 1.4rem;
+  padding-bottom: 8%;
+}
+
+.card-btn {
+  background-color: orange;
+  font-size: 1.2rem;
+  width: 150px;
+  padding: 10px 12px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.card-btn:hover {
+  width: 170px;
+  letter-spacing: 2px;
+}
+
+/* ==================================PRODUCT========================================= */
+.Product {
+  background-color: black;
+  padding: 20px;
+}
+
+.Our-Product h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 0px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  column-gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ProductCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ProductCard1 {
+  border: 3px solid orange;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.ProductCard1:hover {
+  transform: translateY(-5px);
+}
+
+.card-imgs {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.img1 img {
+  width: 65px;
+  border: 3px solid orange;
+  padding: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img1:hover {
+  background: rgb(68, 51, 0);
+}
+
+.Product1 img {
+  width: 100%;
+  max-width: 270px;
+  margin: 20px 0;
+}
+
+.Productheading h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+}
+
+.stars {
+  display: flex;
+  padding: 23px 0px;
+}
+
+.stars img {
+  width: 23px;
+}
+
+.ProductCard1 p {
+  padding-bottom: 20px;
+}
+
+/* ==================================Review================================================================ */
+.Review {
+  background-color: black;
+  padding: 20px;
+}
+
+.Our-review h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 0px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  column-gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ReviewCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ReviewCard1 {
+  border: 3px solid orange;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.ReviewCard1:hover {
+  transform: translateY(-5px);
+}
+
+.reviewcard-imgs {
+  margin: 20px 0px;
+}
+
+.reviewcard-imgs img {
+  width: 60px;
+}
+
+.ReviewCard1 p {
+  max-width: 330px;
+  line-height: 1.8;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  text-align: center;
+  padding: 10px;
+}
+
+.Reviewimg2 img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 23px 0px;
+}
+
+.Reviewheading h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+}
+
+.Reviewstars {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.Reviewstars img {
+  width: 23px;
+}
+
+/* ================================Contact Us================================================= */
+.Contact-Us {
+  background-color: black;
+  padding: 20px;
+}
+
+.Contactheading h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38px 0px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  column-gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Contact-Us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  background-color: rgb(19, 19, 26);
+  padding: 20px;
+}
+
+.Contact-Us-img {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.Form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Form h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 20px;
+}
+
+.Form-content {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-col-1 {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col-1 label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin: 10px 0px;
+  padding: 14px 20px;
+  border: 2px solid orange;
+  background-color: rgb(19, 19, 26);
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  padding: 14px 20px;
+  border: 2px solid orange;
+  background-color: rgb(19, 19, 26);
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-btn {
+  background-color: orange;
+  font-size: 1.2rem;
+  width: 150px;
+  padding: 10px 12px;
+  border-style: none;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Contact-btn:hover {
+  width: 170px;
+  letter-spacing: 2px;
+}
+
+/* =======================================Footer============================ */
+.Footer-content {
+  min-height: 41vh;
+  width: 100%;
+  background-color: rgb(19, 19, 26);
+  padding: 20px;
+}
+
+.Footer-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding: 29px 10px;
+}
+
+.Footerimg1 img {
+  width: 65px;
+  border: 2px solid orange;
+  padding: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Footerimg1 img:hover {
+  background: rgb(68, 51, 0);
+}
+
+.Footerpara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 28px 10px;
+}
+
+.Footer_para p {
+  border: 2px solid orange;
+  padding: 10px 20px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Footer_para p:hover {
+  background: rgb(68, 51, 0);
+}
+
+.foottext {
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 20px 10px;
+}
+
+/* =======================================MEDIA QUERIES============================ */
+
+/* Tablet devices */
+@media screen and (max-width: 768px) {
+  .header {
+    min-height: auto;
+    padding: 15px 10px;
+  }
+
+  .header-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-img img {
+    margin-left: 0;
+    width: 60px;
+  }
+
+  .nav-list ul {
+    column-gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  .nav-list ul a {
+    font-size: 1rem;
+  }
+
+  .content-area {
+    margin-top: auto;
+    padding-top: 250px;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 5%;
+  }
+
+  .About-Us-content {
+    flex-direction: column;
+  }
+
+  .About-Us-img,
+  .About-Us-text {
+    width: 100%;
+  }
+
+  .Form-content {
+    flex-direction: column;
+  }
+
+  .form-col-1 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px 5px;
+  }
+
+  .header-img img {
+    width: 50px;
+  }
+
+  .nav-list ul {
+    column-gap: 10px;
+    row-gap: 8px;
+    padding: 0 10px;
+  }
+
+  .nav-list ul a {
+    font-size: 0.85rem;
+  }
+
+  .content-area {
+    padding-top: 300px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .btn,
+  .about-btn,
+  .card-btn,
+  .Contact-btn {
+    width: 140px;
+    font-size: 1rem;
+  }
+
+  .btn:hover,
+  .about-btn:hover,
+  .card-btn:hover,
+  .Contact-btn:hover {
+    width: 155px;
+  }
+
+  .Cards,
+  .ProductCards,
+  .ReviewCards {
+    padding: 10px;
+  }
+
+  .Card1,
+  .ProductCard1,
+  .ReviewCard1 {
+    max-width: 100%;
+  }
+
+  .card-imgs {
+    gap: 8px;
+  }
+
+  .img1 img {
+    width: 50px;
+    padding: 10px;
+  }
+
+  input,
+  textarea {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .Footer-imgs {
+    padding: 20px 5px;
+  }
+
+  .Footerimg1 img {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .Footerpara {
+    gap: 10px;
+    padding: 20px 5px;
+  }
+
+  .Footer_para p {
+    padding: 8px 15px;
+  }
+}
+
+/* Large mobile devices */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .content-area {
+    padding-top: 280px;
+  }
+
+  .Card1,
+  .ProductCard1,
+  .ReviewCard1 {
+    max-width: 400px;
+  }
+}
+
+/* Small desktop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content-area {
+    margin-top: 28vh;
+  }
+
+  .About-Us-content {
+    margin-left: 5%;
+    max-width: 95%;
+  }
+
+  .Contact-Us-content {
+    max-width: 95%;
+  }
+}

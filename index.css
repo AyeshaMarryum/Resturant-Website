@@ -74,7 +74,7 @@
 .content-area {
   overflow: auto;
   min-height: 100vh;
-  background-image: url(imgs/home-img.png);
+  background-image: url(/imgs/home-img.png);
   background-size: cover;
   background-position: center;
   margin-top: 28vh;
